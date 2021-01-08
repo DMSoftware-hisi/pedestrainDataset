@@ -1,0 +1,21 @@
+train_net: "/home/zouyao/Documents/caffe-train-ssd/Hand-Keypoint-Detection/model/train.prototxt"
+base_lr: 9.999999747378752e-05
+display: 10
+max_iter: 120000
+lr_policy: "multistep"
+gamma: 0.10000000149011612
+momentum: 0.8999999761581421
+weight_decay: 0.0005000000237487257
+snapshot: 80000
+snapshot_prefix: "/home/zouyao/Documents/caffe-train-ssd/Hand-Keypoint-Detection/model/snapshot/VGG_HAND_SSD_300x300_iter_"
+solver_mode: CPU
+device_id: 0
+debug_info: false
+snapshot_after_train: true
+average_loss: 10
+stepvalue: 80000
+stepvalue: 100000
+stepvalue: 120000
+iter_size: 200000
+type: "SGD"
+
