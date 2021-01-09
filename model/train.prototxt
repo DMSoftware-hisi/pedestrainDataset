@@ -44,7 +44,7 @@ layer {
     }
   }
   data_param {
-    source: "train_lmdb/"
+    source: "/content/pedestrainDataset/data/lmdb/trainval_lmdb/"
     batch_size: 16
     backend: LMDB
   }
