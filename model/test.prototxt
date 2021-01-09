@@ -22,12 +22,12 @@ layer {
     }
   }
   data_param {
-    source: "val_lmdb/"
+    source: "/content/pedestrainDataset/data/lmdb/test_lmdb/"
     batch_size: 1
     backend: LMDB
   }
   annotated_data_param {
-    label_map_file: "labelmap.prototxt"
+    label_map_file: "/content/pedestrainDataset/data/labelmap_voc.prototxt"
   }
 }
 
@@ -1810,7 +1810,6 @@ layer {
     code_type: CENTER_SIZE
     keep_top_k: 200
     confidence_threshold: 0.01
-    clip: 1
   }
 }
 layer {
