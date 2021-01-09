@@ -4,7 +4,7 @@ import shutil
 import subprocess
 import sys
 # get caffe root directory
-caffe_root = '/home/zouyao/Documents/caffe-train-ssd/caffe'
+caffe_root = '/content/caffe'
 sys.path.insert(0, os.path.join(caffe_root, 'python'))
 from caffe.proto import caffe_pb2
 from google.protobuf import text_format
