@@ -1,6 +1,6 @@
 import os
 import random
-data_sources = ['egohands']
+data_sources = ['pedestian']
 root_dir = os.path.dirname(os.path.abspath(__file__))
 test_data = []
 train_data = []
