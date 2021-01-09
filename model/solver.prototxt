@@ -1,21 +1,28 @@
-train_net: "/home/zouyao/Documents/caffe-train-ssd/Hand-Keypoint-Detection/model/train.prototxt"
-base_lr: 9.999999747378752e-05
+train_net: "/content/pedestrainDataset/model/train.prototxt"
+test_net: "/content/pedestrainDataset/model/test.prototxt"
+
+test_iter: 2312
+test_interval: 5000
+test_initialization: true
+
+base_lr: 0.01
 display: 10
-max_iter: 120000
 lr_policy: "multistep"
-gamma: 0.10000000149011612
-momentum: 0.8999999761581421
-weight_decay: 0.0005000000237487257
-snapshot: 80000
-snapshot_prefix: "/home/zouyao/Documents/caffe-train-ssd/Hand-Keypoint-Detection/model/snapshot/VGG_HAND_SSD_300x300_iter_"
-solver_mode: CPU
-device_id: 0
-debug_info: false
-snapshot_after_train: true
-average_loss: 10
+max_iter: 140000
 stepvalue: 80000
-stepvalue: 100000
 stepvalue: 120000
-iter_size: 200000
+gamma: 0.1
+momentum: 0.9
+weight_decay: 0.0005
+average_loss: 500
+iter_size: 1
 type: "SGD"
 
+solver_mode: GPU
+random_seed: 0
+debug_info: false
+snapshot: 3000
+snapshot_prefix: "/content/drive/caffePedestrian/snapshots/res10_pedestrian_300x300_ssd"
+
+eval_type: "detection"
+ap_version: "11point"
