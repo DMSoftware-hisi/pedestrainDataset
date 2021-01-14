@@ -5,11 +5,10 @@ layer {
   top: "data"
   top: "label"
   include {
-    phase: TRAIN
+    phase: TEST
   }
   transform_param {
     scale: 0.007843
-    mirror: true
     mean_value: 127.5
     mean_value: 127.5
     mean_value: 127.5
@@ -19,121 +18,17 @@ layer {
       height: 300
       width: 300
       interp_mode: LINEAR
-      interp_mode: AREA
-      interp_mode: NEAREST
-      interp_mode: CUBIC
-      interp_mode: LANCZOS4
-    }
-    emit_constraint {
-      emit_type: CENTER
-    }
-    distort_param {
-      brightness_prob: 0.5
-      brightness_delta: 32.0
-      contrast_prob: 0.5
-      contrast_lower: 0.5
-      contrast_upper: 1.5
-      hue_prob: 0.5
-      hue_delta: 18.0
-      saturation_prob: 0.5
-      saturation_lower: 0.5
-      saturation_upper: 1.5
-      random_order_prob: 0.0
-    }
-    expand_param {
-      prob: 0.5
-      max_expand_ratio: 4.0
     }
   }
   data_param {
-    source: "trainval_lmdb/"
-    batch_size: 24
+    source: "/content/pedestrainDataset/data/lmdb/test_lmdb/"
+    batch_size: 8
     backend: LMDB
   }
   annotated_data_param {
     batch_sampler {
-      max_sample: 1
-      max_trials: 1
     }
-    batch_sampler {
-      sampler {
-        min_scale: 0.3
-        max_scale: 1.0
-        min_aspect_ratio: 0.5
-        max_aspect_ratio: 2.0
-      }
-      sample_constraint {
-        min_jaccard_overlap: 0.1
-      }
-      max_sample: 1
-      max_trials: 50
-    }
-    batch_sampler {
-      sampler {
-        min_scale: 0.3
-        max_scale: 1.0
-        min_aspect_ratio: 0.5
-        max_aspect_ratio: 2.0
-      }
-      sample_constraint {
-        min_jaccard_overlap: 0.3
-      }
-      max_sample: 1
-      max_trials: 50
-    }
-    batch_sampler {
-      sampler {
-        min_scale: 0.3
-        max_scale: 1.0
-        min_aspect_ratio: 0.5
-        max_aspect_ratio: 2.0
-      }
-      sample_constraint {
-        min_jaccard_overlap: 0.5
-      }
-      max_sample: 1
-      max_trials: 50
-    }
-    batch_sampler {
-      sampler {
-        min_scale: 0.3
-        max_scale: 1.0
-        min_aspect_ratio: 0.5
-        max_aspect_ratio: 2.0
-      }
-      sample_constraint {
-        min_jaccard_overlap: 0.7
-      }
-      max_sample: 1
-      max_trials: 50
-    }
-    batch_sampler {
-      sampler {
-        min_scale: 0.3
-        max_scale: 1.0
-        min_aspect_ratio: 0.5
-        max_aspect_ratio: 2.0
-      }
-      sample_constraint {
-        min_jaccard_overlap: 0.9
-      }
-      max_sample: 1
-      max_trials: 50
-    }
-    batch_sampler {
-      sampler {
-        min_scale: 0.3
-        max_scale: 1.0
-        min_aspect_ratio: 0.5
-        max_aspect_ratio: 2.0
-      }
-      sample_constraint {
-        max_jaccard_overlap: 1.0
-      }
-      max_sample: 1
-      max_trials: 50
-    }
-    label_map_file: "labelmap.prototxt"
+    label_map_file: "/content/pedestrainDataset/data/labelmap_voc.prototxt"
   }
 }
 layer {
@@ -186,7 +81,7 @@ layer {
     num_output: 16
     pad: 1
     kernel_size: 3
-    group: 32
+    group: 16
     engine: CAFFE
     weight_filler {
       type: "msra"
@@ -252,7 +147,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 2
-    group: 64
+    group: 32
     engine: CAFFE
     weight_filler {
       type: "msra"
@@ -317,7 +212,7 @@ layer {
     num_output: 64
     pad: 1
     kernel_size: 3
-    group: 128
+    group: 64
     engine: CAFFE
     weight_filler {
       type: "msra"
@@ -383,7 +278,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 2
-    group: 128
+    group: 64
     engine: CAFFE
     weight_filler {
       type: "msra"
@@ -448,7 +343,7 @@ layer {
     num_output: 128
     pad: 1
     kernel_size: 3
-    group: 256
+    group: 128
     engine: CAFFE
     weight_filler {
       type: "msra"
@@ -514,7 +409,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 2
-    group: 256
+    group: 128
     engine: CAFFE
     weight_filler {
       type: "msra"
@@ -579,7 +474,7 @@ layer {
     num_output: 256
     pad: 1
     kernel_size: 3
-    group: 512
+    group: 256
     engine: CAFFE
     weight_filler {
       type: "msra"
@@ -644,7 +539,7 @@ layer {
     num_output: 256
     pad: 1
     kernel_size: 3
-    group: 512
+    group: 256
     engine: CAFFE
     weight_filler {
       type: "msra"
@@ -709,7 +604,7 @@ layer {
     num_output: 256
     pad: 1
     kernel_size: 3
-    group: 512
+    group: 256
     engine: CAFFE
     weight_filler {
       type: "msra"
@@ -774,7 +669,7 @@ layer {
     num_output: 256
     pad: 1
     kernel_size: 3
-    group: 512
+    group: 256
     engine: CAFFE
     weight_filler {
       type: "msra"
@@ -839,7 +734,7 @@ layer {
     num_output: 256
     pad: 1
     kernel_size: 3
-    group: 512
+    group: 256
     engine: CAFFE
     weight_filler {
       type: "msra"
@@ -905,7 +800,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 2
-    group: 512
+    group: 256
     engine: CAFFE
     weight_filler {
       type: "msra"
@@ -970,7 +865,7 @@ layer {
     num_output: 512
     pad: 1
     kernel_size: 3
-    group: 1024
+    group: 512
     engine: CAFFE
     weight_filler {
       type: "msra"
@@ -1987,38 +1882,72 @@ layer {
   }
 }
 layer {
-  name: "mbox_loss"
-  type: "MultiBoxLoss"
-  bottom: "mbox_loc"
+  name: "mbox_conf_reshape"
+  type: "Reshape"
   bottom: "mbox_conf"
+  top: "mbox_conf_reshape"
+  reshape_param {
+    shape {
+      dim: 0
+      dim: -1
+      dim: 2
+    }
+  }
+}
+layer {
+  name: "mbox_conf_softmax"
+  type: "Softmax"
+  bottom: "mbox_conf_reshape"
+  top: "mbox_conf_softmax"
+  softmax_param {
+    axis: 2
+  }
+}
+layer {
+  name: "mbox_conf_flatten"
+  type: "Flatten"
+  bottom: "mbox_conf_softmax"
+  top: "mbox_conf_flatten"
+  flatten_param {
+    axis: 1
+  }
+}
+layer {
+  name: "detection_out"
+  type: "DetectionOutput"
+  bottom: "mbox_loc"
+  bottom: "mbox_conf_flatten"
   bottom: "mbox_priorbox"
-  bottom: "label"
-  top: "mbox_loss"
+  top: "detection_out"
   include {
-    phase: TRAIN
+    phase: TEST
   }
-  propagate_down: true
-  propagate_down: true
-  propagate_down: false
-  propagate_down: false
-  loss_param {
-    normalization: VALID
-  }
-  multibox_loss_param {
-    loc_loss_type: SMOOTH_L1
-    conf_loss_type: SOFTMAX
-    loc_weight: 1.0
+  detection_output_param {
     num_classes: 2
     share_location: true
-    match_type: PER_PREDICTION
-    overlap_threshold: 0.5
-    use_prior_for_matching: true
     background_label_id: 0
-    use_difficult_gt: true
-    neg_pos_ratio: 3.0
-    neg_overlap: 0.5
+    nms_param {
+      nms_threshold: 0.45
+      top_k: 400
+    }
     code_type: CENTER_SIZE
-    ignore_cross_boundary_bbox: false
-    mining_type: MAX_NEGATIVE
+    keep_top_k: 200
+    confidence_threshold: 0.01
+  }
+}
+layer {
+  name: "detection_eval"
+  type: "DetectionEvaluate"
+  bottom: "detection_out"
+  bottom: "label"
+  top: "detection_eval"
+  include {
+    phase: TEST
+  }
+  detection_evaluate_param {
+    num_classes: 2
+    background_label_id: 0
+    overlap_threshold: 0.5
+    evaluate_difficult_gt: false
   }
 }
