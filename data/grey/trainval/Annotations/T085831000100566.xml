@@ -1,0 +1,20 @@
+<annotation>
+	<folder>pedestrian</folder>
+	<filename>T085831000100566</filename>
+	<size>
+		<width>704</width>
+		<height>576</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>person</name>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>268</xmin>
+			<ymin>187</ymin>
+			<xmax>344</xmax>
+			<ymax>391</ymax>
+		</bndbox>
+	</object>
+</annotation>

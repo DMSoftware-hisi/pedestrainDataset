@@ -1,0 +1,30 @@
+<annotation>
+	<folder>pedestrian</folder>
+	<filename>CH3_20201218_113100_1137180264</filename>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>person</name>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>966</xmin>
+			<ymin>292</ymin>
+			<xmax>1040</xmax>
+			<ymax>513</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>person</name>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>682</xmin>
+			<ymin>279</ymin>
+			<xmax>790</xmax>
+			<ymax>570</ymax>
+		</bndbox>
+	</object>
+</annotation>
