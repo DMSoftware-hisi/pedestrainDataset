@@ -1,6 +1,6 @@
 <annotation>
   <folder>pedestrian</folder>
-  <filename>set00_V001_1056</filename>
+  <filename>set00_V001_</filename>
   <size>
     <width>640</width>
     <height>480</height>
@@ -10,7 +10,7 @@
   <object>
     <name>person</name>
     <bndbox>
-      <xmin>-4</xmin>
+      <xmin>0</xmin>
       <ymin>84</ymin>
       <xmax>116</xmax>
       <ymax>402</ymax>
