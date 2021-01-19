@@ -1,6 +1,6 @@
 <annotation>
   <folder>pedestrian</folder>
-  <filename>set01_V001_1356</filename>
+  <filename>set01_V001_</filename>
   <size>
     <width>640</width>
     <height>480</height>
@@ -12,7 +12,7 @@
     <bndbox>
       <xmin>605</xmin>
       <ymin>186</ymin>
-      <xmax>640</xmax>
+      <xmax>639</xmax>
       <ymax>237</ymax>
     </bndbox>
     <difficult>0</difficult>
