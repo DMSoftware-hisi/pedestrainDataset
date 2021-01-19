@@ -1,0 +1,32 @@
+<annotation>
+  <folder>pedestrian</folder>
+  <filename>set01_V000_364</filename>
+  <size>
+    <width>640</width>
+    <height>480</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>person</name>
+    <bndbox>
+      <xmin>464</xmin>
+      <ymin>165</ymin>
+      <xmax>478</xmax>
+      <ymax>202</ymax>
+    </bndbox>
+    <difficult>0</difficult>
+    <occlusion>0</occlusion>
+  </object>
+  <object>
+    <name>person</name>
+    <bndbox>
+      <xmin>435</xmin>
+      <ymin>170</ymin>
+      <xmax>452</xmax>
+      <ymax>197</ymax>
+    </bndbox>
+    <difficult>0</difficult>
+    <occlusion>1</occlusion>
+  </object>
+</annotation>
