@@ -1,0 +1,21 @@
+<annotation>
+  <folder>pedestrian</folder>
+  <filename>set04_V005_316</filename>
+  <size>
+    <width>640</width>
+    <height>480</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>person</name>
+    <bndbox>
+      <xmin>481</xmin>
+      <ymin>159</ymin>
+      <xmax>510</xmax>
+      <ymax>208</ymax>
+    </bndbox>
+    <difficult>0</difficult>
+    <occlusion>1</occlusion>
+  </object>
+</annotation>
