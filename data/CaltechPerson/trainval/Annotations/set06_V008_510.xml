@@ -1,6 +1,6 @@
 <annotation>
   <folder>pedestrian</folder>
-  <filename>set06_V008_510</filename>
+  <filename>set06_V008</filename>
   <size>
     <width>640</width>
     <height>480</height>
@@ -9,56 +9,26 @@
   <segmented>0</segmented>
   <object>
     <name>person</name>
-    <bndbox>
-      <xmin>575</xmin>
-      <ymin>186</ymin>
-      <xmax>590</xmax>
-      <ymax>238</ymax>
-    </bndbox>
     <difficult>0</difficult>
     <occlusion>0</occlusion>
   </object>
   <object>
     <name>person</name>
-    <bndbox>
-      <xmin>574</xmin>
-      <ymin>183</ymin>
-      <xmax>575</xmax>
-      <ymax>240</ymax>
-    </bndbox>
     <difficult>0</difficult>
     <occlusion>1</occlusion>
   </object>
   <object>
     <name>person</name>
-    <bndbox>
-      <xmin>545</xmin>
-      <ymin>182</ymin>
-      <xmax>561</xmax>
-      <ymax>230</ymax>
-    </bndbox>
     <difficult>0</difficult>
     <occlusion>1</occlusion>
   </object>
   <object>
     <name>person</name>
-    <bndbox>
-      <xmin>489</xmin>
-      <ymin>180</ymin>
-      <xmax>507</xmax>
-      <ymax>223</ymax>
-    </bndbox>
     <difficult>0</difficult>
     <occlusion>1</occlusion>
   </object>
   <object>
     <name>person</name>
-    <bndbox>
-      <xmin>504</xmin>
-      <ymin>181</ymin>
-      <xmax>523</xmax>
-      <ymax>237</ymax>
-    </bndbox>
     <difficult>0</difficult>
     <occlusion>1</occlusion>
   </object>

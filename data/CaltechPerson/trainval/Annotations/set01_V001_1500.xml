@@ -1,6 +1,6 @@
 <annotation>
   <folder>pedestrian</folder>
-  <filename>set01_V001_1500</filename>
+  <filename>set01_V001_</filename>
   <size>
     <width>640</width>
     <height>480</height>
@@ -9,12 +9,6 @@
   <segmented>0</segmented>
   <object>
     <name>person</name>
-    <bndbox>
-      <xmin>394</xmin>
-      <ymin>170</ymin>
-      <xmax>403</xmax>
-      <ymax>193</ymax>
-    </bndbox>
     <difficult>0</difficult>
     <occlusion>0</occlusion>
   </object>
@@ -42,67 +36,31 @@
   </object>
   <object>
     <name>person</name>
-    <bndbox>
-      <xmin>598</xmin>
-      <ymin>163</ymin>
-      <xmax>617</xmax>
-      <ymax>225</ymax>
-    </bndbox>
     <difficult>0</difficult>
     <occlusion>1</occlusion>
   </object>
   <object>
     <name>person</name>
-    <bndbox>
-      <xmin>523</xmin>
-      <ymin>164</ymin>
-      <xmax>539</xmax>
-      <ymax>219</ymax>
-    </bndbox>
     <difficult>0</difficult>
     <occlusion>1</occlusion>
   </object>
   <object>
     <name>person</name>
-    <bndbox>
-      <xmin>533</xmin>
-      <ymin>153</ymin>
-      <xmax>552</xmax>
-      <ymax>214</ymax>
-    </bndbox>
     <difficult>0</difficult>
     <occlusion>1</occlusion>
   </object>
   <object>
     <name>person</name>
-    <bndbox>
-      <xmin>104</xmin>
-      <ymin>175</ymin>
-      <xmax>115</xmax>
-      <ymax>201</ymax>
-    </bndbox>
     <difficult>0</difficult>
     <occlusion>1</occlusion>
   </object>
   <object>
     <name>person</name>
-    <bndbox>
-      <xmin>98</xmin>
-      <ymin>175</ymin>
-      <xmax>107</xmax>
-      <ymax>198</ymax>
-    </bndbox>
     <difficult>0</difficult>
     <occlusion>1</occlusion>
   </object>
   <object>
     <name>person</name>
-    <bndbox>
-      <xmin>486</xmin>
-      <ymin>162</ymin>
-      <xmax>505</xmax>
-      <ymax>220</ymax>
-    </bndbox>
     <difficult>0</difficult>
     <occlusion>1</occlusion>
   </object>
@@ -119,12 +77,6 @@
   </object>
   <object>
     <name>person</name>
-    <bndbox>
-      <xmin>481</xmin>
-      <ymin>164</ymin>
-      <xmax>493</xmax>
-      <ymax>217</ymax>
-    </bndbox>
     <difficult>0</difficult>
     <occlusion>1</occlusion>
   </object>

@@ -1,6 +1,6 @@
 <annotation>
-	<folder>images</folder>
-	<filename>set03_V003_1249.jpg</filename>
+	<folder>pedestrian</folder>
+	<filename>set03_V003_1249</filename>
 	<path>F:\Daream_bsd_data\Caltech Pedestrian\seq\images\set03_V003_1249.jpg</path>
 	<source>
 		<database>Unknown</database>
@@ -16,11 +16,5 @@
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
-		<bndbox>
-			<xmin>473</xmin>
-			<ymin>191</ymin>
-			<xmax>485</xmax>
-			<ymax>219</ymax>
-		</bndbox>
-	</object>
+		</object>
 </annotation>
