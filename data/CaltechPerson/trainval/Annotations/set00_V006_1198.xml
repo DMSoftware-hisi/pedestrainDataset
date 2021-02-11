@@ -1,6 +1,6 @@
 <annotation>
   <folder>pedestrian</folder>
-  <filename>set00_V006_1198</filename>
+  <filename>set00_V006_</filename>
   <size>
     <width>640</width>
     <height>480</height>
@@ -21,32 +21,10 @@
   <object>
     <name>person</name>
     <bndbox>
-      <xmin>169</xmin>
-      <ymin>146</ymin>
-      <xmax>209</xmax>
-      <ymax>260</ymax>
-    </bndbox>
-    <difficult>0</difficult>
-    <occlusion>0</occlusion>
-  </object>
-  <object>
-    <name>person</name>
-    <bndbox>
       <xmin>147</xmin>
       <ymin>145</ymin>
       <xmax>175</xmax>
       <ymax>240</ymax>
-    </bndbox>
-    <difficult>0</difficult>
-    <occlusion>1</occlusion>
-  </object>
-  <object>
-    <name>person</name>
-    <bndbox>
-      <xmin>178</xmin>
-      <ymin>157</ymin>
-      <xmax>207</xmax>
-      <ymax>234</ymax>
     </bndbox>
     <difficult>0</difficult>
     <occlusion>1</occlusion>

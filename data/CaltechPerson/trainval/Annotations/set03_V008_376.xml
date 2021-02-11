@@ -1,6 +1,6 @@
 <annotation>
   <folder>pedestrian</folder>
-  <filename>set03_V008_376</filename>
+  <filename>set03_V008</filename>
   <size>
     <width>640</width>
     <height>480</height>
@@ -10,32 +10,10 @@
   <object>
     <name>person</name>
     <bndbox>
-      <xmin>275</xmin>
-      <ymin>143</ymin>
-      <xmax>313</xmax>
-      <ymax>252</ymax>
-    </bndbox>
-    <difficult>0</difficult>
-    <occlusion>0</occlusion>
-  </object>
-  <object>
-    <name>person</name>
-    <bndbox>
       <xmin>77</xmin>
       <ymin>128</ymin>
       <xmax>160</xmax>
       <ymax>370</ymax>
-    </bndbox>
-    <difficult>0</difficult>
-    <occlusion>0</occlusion>
-  </object>
-  <object>
-    <name>person</name>
-    <bndbox>
-      <xmin>308</xmin>
-      <ymin>143</ymin>
-      <xmax>357</xmax>
-      <ymax>255</ymax>
     </bndbox>
     <difficult>0</difficult>
     <occlusion>0</occlusion>
@@ -54,32 +32,10 @@
   <object>
     <name>person</name>
     <bndbox>
-      <xmin>64</xmin>
-      <ymin>182</ymin>
-      <xmax>84</xmax>
-      <ymax>232</ymax>
-    </bndbox>
-    <difficult>0</difficult>
-    <occlusion>1</occlusion>
-  </object>
-  <object>
-    <name>person</name>
-    <bndbox>
       <xmin>241</xmin>
       <ymin>145</ymin>
       <xmax>276</xmax>
       <ymax>255</ymax>
-    </bndbox>
-    <difficult>0</difficult>
-    <occlusion>0</occlusion>
-  </object>
-  <object>
-    <name>person</name>
-    <bndbox>
-      <xmin>181</xmin>
-      <ymin>153</ymin>
-      <xmax>210</xmax>
-      <ymax>249</ymax>
     </bndbox>
     <difficult>0</difficult>
     <occlusion>0</occlusion>
@@ -98,31 +54,9 @@
   <object>
     <name>person</name>
     <bndbox>
-      <xmin>221</xmin>
-      <ymin>168</ymin>
-      <xmax>246</xmax>
-      <ymax>237</ymax>
-    </bndbox>
-    <difficult>0</difficult>
-    <occlusion>1</occlusion>
-  </object>
-  <object>
-    <name>person</name>
-    <bndbox>
       <xmin>97</xmin>
       <ymin>131</ymin>
       <xmax>176</xmax>
-      <ymax>336</ymax>
-    </bndbox>
-    <difficult>0</difficult>
-    <occlusion>1</occlusion>
-  </object>
-  <object>
-    <name>person</name>
-    <bndbox>
-      <xmin>75</xmin>
-      <ymin>132</ymin>
-      <xmax>121</xmax>
       <ymax>336</ymax>
     </bndbox>
     <difficult>0</difficult>
@@ -135,17 +69,6 @@
       <ymin>141</ymin>
       <xmax>341</xmax>
       <ymax>251</ymax>
-    </bndbox>
-    <difficult>0</difficult>
-    <occlusion>1</occlusion>
-  </object>
-  <object>
-    <name>person</name>
-    <bndbox>
-      <xmin>337</xmin>
-      <ymin>146</ymin>
-      <xmax>369</xmax>
-      <ymax>248</ymax>
     </bndbox>
     <difficult>0</difficult>
     <occlusion>1</occlusion>
@@ -175,17 +98,6 @@
   <object>
     <name>person</name>
     <bndbox>
-      <xmin>541</xmin>
-      <ymin>154</ymin>
-      <xmax>566</xmax>
-      <ymax>235</ymax>
-    </bndbox>
-    <difficult>0</difficult>
-    <occlusion>0</occlusion>
-  </object>
-  <object>
-    <name>person</name>
-    <bndbox>
       <xmin>123</xmin>
       <ymin>136</ymin>
       <xmax>198</xmax>
@@ -193,17 +105,6 @@
     </bndbox>
     <difficult>0</difficult>
     <occlusion>1</occlusion>
-  </object>
-  <object>
-    <name>person</name>
-    <bndbox>
-      <xmin>397</xmin>
-      <ymin>133</ymin>
-      <xmax>440</xmax>
-      <ymax>257</ymax>
-    </bndbox>
-    <difficult>0</difficult>
-    <occlusion>0</occlusion>
   </object>
   <object>
     <name>person</name>
